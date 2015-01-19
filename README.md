@@ -1,5 +1,7 @@
 # Random Space Widget ###
 
+<img src="http://s21.postimg.org/f6exm0c53/Screenshot_1.png">
+
 ## Description
 
 Displays a random space on the sidebar widget
