@@ -2,12 +2,12 @@
 
 ## Description
 
-This widget shows a random space on the dashboard
+Displays a random space on the sidebar widget
 
 ### Features:
 
 - No admin configuration
-- Random space on dashboard
+- Random space on top of dashboard sidebar widgets
 
 ### Installation
 
