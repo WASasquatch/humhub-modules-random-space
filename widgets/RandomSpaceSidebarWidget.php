@@ -16,7 +16,7 @@ class RandomSpaceSidebarWidget extends HWidget {
 	 */
 	public function run() {
 	    $css = Yii::app()->assetManager->publish(dirname(__FILE__) . '/../css', true, 0, defined('YII_DEBUG'));
-        Yii::app()->clientScript->registerCssFile($css . '/main.css');
+        Yii::app()->clientScript->registerCssFile($css . '/randomspace.css');
 		$spaceInfo = $this->getRandomSpace();
 		if ( is_object($spaceInfo[0]) && is_array($spaceInfo[1]) ) {
 			$this->render ( 'RandomSpacePanel', array (
