@@ -16,3 +16,5 @@ Displays a random space on the sidebar widget
 
 __Author:__ Jordan Thompson
 __Author website:__ [HumHub Community](http://community.humhub.org/)
+
+Powered by [HumHub](http://humhub.org/)
