@@ -1,0 +1,99 @@
+/*
+ *	Random Space Widget CSS
+ *	Author: Jordan Thompson
+ *
+ */
+
+#random-space-widget {
+  padding: 5px;
+  min-height: 90px;
+}
+.panel-heading .member-count {
+  font-weight: bold;
+  font-size: 11px;
+  padding-top: 6px;
+}
+#random-space-widget .random-space-image {
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  max-width: 80px;
+  max-height: 80px;
+  padding: 5px;
+}
+#random-space-widget .space-title {
+  font-size: 16px;
+  font-weight: bold;
+  border-bottom: 1px solid #EEE;
+  margin-left: 85px;
+  margin-right: 5px;
+}
+#random-space-widget .space-description {
+  font-size: 12px;
+  color: #777;
+  margin-left: 85px;
+}
+#space-widget-members {
+  border-top: 1px solid #E4E4E4;
+  display: block;
+  padding: 5px;
+  min-height: 100%; 
+  overflow-y: hidden;
+  position: relative;
+  background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(124,124,124,0.1) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(124,124,124,0.1)));
+  background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(124,124,124,0.1) 100%);
+  background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(124,124,124,0.1) 100%);
+  background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(124,124,124,0.1) 100%);
+  background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(124,124,124,0.1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#1a7c7c7c',GradientType=0 );
+  -webkit-box-shadow:inset 0 10px 15px -10px rgba(0,0,0,0.05);
+  box-shadow:inset 0 10px 15px -10px rgba(0,0,0,0.05);
+}
+#space-widget-controls {
+  background-color: rgba(155,155,155,0.1);
+  border-top: 1px solid #E4E4E4;
+  min-height: 100%; 
+  overflow-y: hidden;
+  position: relative;
+}
+#space-widget-controls .random-space-owner {
+  display: inline-block;
+  float: right;
+  padding-bottom: 3px;
+}
+#space-widget-controls .random-space-owner img {
+  padding: 0;
+  margin: 0;
+}
+#space-widget-controls .random-space-membership {
+  font-size: x-small;
+  padding: 7px;
+}
+#space-widget-controls .random-space-membership .btn-danger {
+  margin-left: 5px;
+  padding: 4px;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+#space-widget-controls .random-space-membership .btn-primary {
+  margin-left: 5px;
+  padding: 4px;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+#space-widget-controls .random-space-membership .btn-success {
+  margin-left: 5px;
+  padding: 4px;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+#space-widget-controls .random-space-membership  > * {
+	font-size: x-small;
+}
+.truncate-random {
+  width: 280px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

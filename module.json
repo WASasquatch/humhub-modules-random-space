@@ -1,0 +1,11 @@
+{
+    "id": "randomspace",
+    "name": "Random Space Widget",
+    "description": "This widget shows a random space on the dashboard.",
+    "keywords": ["randomspace", "random", "space", "widget", "dashboard"],
+    "version": "0.0.1",
+    "humhub": {
+        "minVersion": "0.10.0"
+    },
+    "screenshots": ["assets/Screenshot_1.png"]
+}
