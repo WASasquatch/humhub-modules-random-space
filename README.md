@@ -4,7 +4,7 @@
 
 ## Description
 
-Displays a random space on the sidebar widget
+Displays a random space on the dashboard sidebar
 
 ### Features:
 
