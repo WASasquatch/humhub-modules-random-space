@@ -68,7 +68,7 @@
 		foreach($members as $member): 
 			if ($limit >= $cur): ?>
 				<a href="<?php echo $member->getProfileUrl(); ?>"> 
-					<img src="<?php echo $member->getProfileImage()->getUrl(); ?>" class="media-object space-widget-member-image img-rounded pull-left" 
+					<img src="<?php echo $member->getProfileImage()->getUrl(); ?>" class="media-object tt space-widget-member-image img-rounded pull-left" 
 					style="width: 24px; height: 24px;" alt="24x24" data-src="holder.js/24x24" data-toggle="tooltip" data-placement="top" title="" 
 					data-original-title="<strong><?php echo $member->displayName; ?></strong><br /><?php echo $member->profile->title; ?>" />
 				</a>
@@ -91,7 +91,7 @@
 					<td width="31" valign="middle">
 						<div class="random-space-owner">
 							<a href="<?php echo Yii::app()->createUrl('//user/profile', array('uguid' => $space->getSpaceOwner()->guid)); ?>" title="Owner"><img src="<?php echo $space->getSpaceOwner()->getProfileImage()->getUrl(); ?>" 
-								class="media-object space-widget-member-image img-rounded pull-right" 
+								class="media-object tt space-widget-member-image img-rounded pull-right" 
 								style="width: 28px; height: 28px;" alt="28x28" data-src="holder.js/28x28" data-toggle="tooltip" data-placement="top" title="" 
 								data-original-title="<strong><?php echo $space->getSpaceOwner()->displayName; ?></strong><br /><?php echo $space->getSpaceOwner()->profile->title; ?>" />
 							</a>
