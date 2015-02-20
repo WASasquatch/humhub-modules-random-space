@@ -14,7 +14,7 @@ Displays a random space on the dashboard sidebar
 ### Languages
 
 - English (EN_GB) - *Default*
-- Russian (RU)
+- Pусский (RU)
 
 ### Installation
 
