@@ -11,34 +11,34 @@
 	// Membership Handling
 	if ($space->isMember(Yii::app()->user->id)) {
 		if ($space->isSpaceOwner(Yii::app()->user->id)) {
-			$membershipText = Yii::t('RandomSpaceModuel.base', "You are the owner of this space.");
+			$membershipText = Yii::t('RandomSpaceModule.base', "You are the owner of this space.");
 		} else {
-			$membershipText = CHtml::link(Yii::t('RandomSpaceModuel.base', "Cancel membership"), $this->createUrl('//space/space/revokeMembership', array('sguid' => $space->guid)), array('class' => 'btn btn-danger'));
+			$membershipText = CHtml::link(Yii::t('RandomSpaceModule.base', "Cancel membership"), $this->createUrl('//space/space/revokeMembership', array('sguid' => $space->guid)), array('class' => 'btn btn-danger'));
 		}
 	} else {
 		if ($membership == null) {
 			if ($space->canJoin()) {
 				if ($space->join_policy == Space::JOIN_POLICY_APPLICATION) {
-					$membershipText = CHtml::link(Yii::t('RandomSpaceModuel.base', 'Request membership'), $this->createUrl('//space/space/requestMembershipForm', array('sguid' => $space->guid)), array('class' => 'btn btn-primary', 'data-toggle' => 'modal', 'data-target' => '#globalModal'));
+					$membershipText = CHtml::link(Yii::t('RandomSpaceModule.base', 'Request membership'), $this->createUrl('//space/space/requestMembershipForm', array('sguid' => $space->guid)), array('class' => 'btn btn-primary', 'data-toggle' => 'modal', 'data-target' => '#globalModal'));
 				} else {
 					$membershipText = '<a href="'.$this->createUrl('//space/space/requestMembership', array('sguid' => $space->guid)).'"
-                                           class="btn btn-primary">'.Yii::t('RandomSpaceModuel.base', 'Become member').'</a>';
+                                           class="btn btn-primary">'.Yii::t('RandomSpaceModule.base', 'Become member').'</a>';
 				}
 			}
 		} elseif ($membership->status == SpaceMembership::STATUS_INVITED) {
-			$membershipText = '<a href="' . Yii::app()->createUrl("//space/space/inviteAccept", array('sguid' => $space->guid)) . '" class="btn btn-primary">' . Yii::t('RandomSpaceModuel.base', 'Accept Invite') . '</a> ';
-			$membershipText .= '<a href="' . Yii::app()->createUrl("//space/space/revokeMembership", array('sguid' => $space->guid)) . '" class="btn btn-primary">' . Yii::t('RandomSpaceModuel.base', 'Decline Invite') . '</a> ';
+			$membershipText = '<a href="' . Yii::app()->createUrl("//space/space/inviteAccept", array('sguid' => $space->guid)) . '" class="btn btn-primary">' . Yii::t('RandomSpaceModule.base', 'Accept Invite') . '</a> ';
+			$membershipText .= '<a href="' . Yii::app()->createUrl("//space/space/revokeMembership", array('sguid' => $space->guid)) . '" class="btn btn-primary">' . Yii::t('RandomSpaceModule.base', 'Decline Invite') . '</a> ';
 		} elseif ($membership->status == SpaceMembership::STATUS_APPLICANT) {
-			$membershipText = '<a href="' . Yii::app()->createUrl("//space/space/revokeMembership", array('sguid' => $space->guid)) . '" class="btn btn-primary" id="membership_button">' . Yii::t('RandomSpaceModuel.base', 'Cancel pending membership application') . '</a>';
+			$membershipText = '<a href="' . Yii::app()->createUrl("//space/space/revokeMembership", array('sguid' => $space->guid)) . '" class="btn btn-primary" id="membership_button">' . Yii::t('RandomSpaceModule.base', 'Cancel pending membership application') . '</a>';
 		}
 	}
 	
 	// Follow Handling
 	if (!($space->isMember())) {
 		if ($space->isFollowedByUser()) {
-			$followText = HHtml::postLink(Yii::t('RandomSpaceModuel.base', "Unfollow"), $space->createUrl('//space/space/unfollow'), array('class' => 'btn btn-danger'));
+			$followText = HHtml::postLink(Yii::t('RandomSpaceModule.base', "Unfollow"), $space->createUrl('//space/space/unfollow'), array('class' => 'btn btn-danger'));
 		} else {
-			$followText = HHtml::postLink(Yii::t('RandomSpaceModuel.base', "Follow"), $space->createUrl('//space/space/follow'), array('class' => 'btn btn-success'));
+			$followText = HHtml::postLink(Yii::t('RandomSpaceModule.base', "Follow"), $space->createUrl('//space/space/follow'), array('class' => 'btn btn-success'));
 		}
 	}
  
