@@ -11,6 +11,11 @@ Displays a random space on the dashboard sidebar
 - No admin configuration
 - Random space on top of dashboard sidebar widgets
 
+### Languages
+
+- English (EN_GB)
+- Russian (RU)
+
 ### Installation
 
 - Drop into your /protected/modules folder as **randomspace**
