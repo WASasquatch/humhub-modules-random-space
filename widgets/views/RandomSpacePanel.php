@@ -7,6 +7,8 @@
  */
  
 	$membership = $space->getMembership();
+	/* Prevent undefined variable error */
+	$membershipText = ''; 
  
 	// Membership Handling
 	if ($space->isMember(Yii::app()->user->id)) {
