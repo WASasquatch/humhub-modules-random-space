@@ -66,7 +66,7 @@
 		</div>
 	</div>
 	<div id="space-widget-members">
-		<?php $limit = 14; $cur = 0;
+		<?php $limit = 39; $cur = 0;
 		foreach($members as $member): 
 			if ($limit >= $cur): ?>
 				<a href="<?php echo $member->getProfileUrl(); ?>"> 
