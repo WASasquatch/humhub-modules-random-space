@@ -9,7 +9,8 @@ Displays a random space on the dashboard sidebar
 ### Features:
 
 - No admin configuration
-- Random space on top of dashboard sidebar widgets
+- Random Public to Guests Spaces on Dashboard for Guests
+- Random Public to Members Spaces on Dashboard for Members
 
 ### Languages
 
