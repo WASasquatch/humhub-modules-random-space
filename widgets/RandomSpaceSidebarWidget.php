@@ -42,9 +42,10 @@ class RandomSpaceSidebarWidget extends HWidget {
         $max = Space::model()->count();
         $randId = rand(0,$max);
         $space = Space::model()->find(array('offset'=>$randId));
-        if ($space->attributes['visibility'] == 2) {
-            if ( is_object($space) ) {
-                    $members = array();
+		$spaceType = (Yii::app()->user->isGuest) ? 2 : 1;
+            if ( is_object($space) && is_array($space->attributes) ) {
+                if ($space->attributes['visibility'] == $spaceType) {
+                $members = array();
                 $membership = Yii::app()->db->createCommand()
                         ->select('user_id')
                     ->from('space_membership')
@@ -62,6 +63,5 @@ class RandomSpaceSidebarWidget extends HWidget {
             $this->getRandomSpace();
         }
     }
-    
     
 }
