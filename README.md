@@ -19,6 +19,7 @@ Displays a random space on the dashboard sidebar
 ## Requirements
 
 - At least 5 Public Spaces (The script will try again in event of private space found in it's roll)
+- A ration of 1/4 of all spaces should be public
 
 ### Installation
 
