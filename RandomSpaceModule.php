@@ -21,32 +21,32 @@ class RandomSpaceModule extends HWebModule
         return $this->_assetsUrl;
     }
 
-	public function init()
-	{
-		// this method is called when the module is being created
-		// you may place code here to customize the module or the application
-	}
-	
-	/**
-	 * Insert widget into Dashboard imitation.
-	 *
-	 * @param type $event
-	 */	
-	public static function onSidebarInit($event) {
+    public function init()
+    {
+        // this method is called when the module is being created
+        // you may place code here to customize the module or the application
+    }
+    
+    /**
+     * Insert widget into Dashboard imitation.
+     *
+     * @param type $event
+     */    
+    public static function onSidebarInit($event) {
 
         if (Yii::app()->moduleManager->isEnabled('randomspace')) {
             $event->sender->addWidget('application.modules.randomspace.widgets.RandomSpaceSidebarWidget', array(), array('sortOrder' => 2)); // Ensure this widget is ontop unless otherwise edited
         }
-		
-	}
-	
-	/**
-	 * Enables this module
-	 */
-	public function enable()
-	{
-		parent::enable();
-	}
-	
+        
+    }
+    
+    /**
+     * Enables this module
+     */
+    public function enable()
+    {
+        parent::enable();
+    }
+    
 }
 ?>
